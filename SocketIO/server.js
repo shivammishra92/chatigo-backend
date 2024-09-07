@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3001",//PORT at which frontend is running
+    origin: "https://chatigo-frontend.onrender.com",//PORT at which frontend is running
     methods: ["GET", "POST"],
   },
 });
